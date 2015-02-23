@@ -1,0 +1,50 @@
+$background-1: #2c3e50
+$text-color: #2c3e50
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+=transition($transition)
+  -webkit-transition: $transition
+  -moz-transition:    $transition
+  -ms-transition:     $transition
+  transition:         $transition
+
+body
+  background-color: $background-1
+  color: $text-color
+
+#main-content
+  display: block
+  background-color: #18BC9C
+  max-width: 960px
+  margin: 0 auto
+  +border-radius(10px)
+
+.glossary-list
+  margin: 0
+  padding: 4%
+  height: auto
+  clear: both
+
+  li
+    padding: 5px 0
+
+  a
+    text-decoration: none
+    color: $text-color
+    padding: 5px 0
+    font-size: 1.5em
+    +transition(all 0.5s ease)
+
+    &:hover
+      text-decoration: underline
+      color: #fff
+
+.col-item
+  padding: 4%
+  width: 42%
+  display: inline-block
